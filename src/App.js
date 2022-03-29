@@ -7,6 +7,12 @@ import MainHeader from './components/MainHeader/MainHeader';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  // useEffect(() => {
+  //   setFormIsValid(
+  //     enteredEmail.includes('@') && enteredPassword.trim().length > 6
+  //   );
+  // }, [enteredEmail, enteredPassword]);
+
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
