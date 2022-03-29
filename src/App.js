@@ -8,20 +8,6 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    console.log('EFFECT RUNNING');
-
-    return () => {
-      console.log('EFFECT CLEANUP');
-    };
-  }, []);
-
-  // useEffect(() => {
-  //   setFormIsValid(
-  //     enteredEmail.includes('@') && enteredPassword.trim().length > 6
-  //   );
-  // }, [enteredEmail, enteredPassword]);
-
-  useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
     if (storedUserLoggedInInformation === '1') {
